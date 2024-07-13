@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\pika\\Desktop\\MicToPng\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D9DE729-7B90-42A6-AC20-6CCAC4D09207}|MicToPng\\MicToPng.csproj|c:\\users\\pika\\desktop\\mictopng\\mictopng\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D9DE729-7B90-42A6-AC20-6CCAC4D09207}|MicToPng\\MicToPng.csproj|solutionrelative:mictopng\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6D9DE729-7B90-42A6-AC20-6CCAC4D09207}|MicToPng\\MicToPng.csproj|c:\\users\\pika\\desktop\\mictopng\\mictopng\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6D9DE729-7B90-42A6-AC20-6CCAC4D09207}|MicToPng\\MicToPng.csproj|solutionrelative:mictopng\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D9DE729-7B90-42A6-AC20-6CCAC4D09207}|MicToPng\\MicToPng.csproj|c:\\users\\pika\\desktop\\mictopng\\mictopng\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D9DE729-7B90-42A6-AC20-6CCAC4D09207}|MicToPng\\MicToPng.csproj|solutionrelative:mictopng\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +34,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPng\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MicToPng\\MainWindow.xaml",
@@ -46,7 +46,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPng\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MicToPng\\MainWindow.xaml.cs",

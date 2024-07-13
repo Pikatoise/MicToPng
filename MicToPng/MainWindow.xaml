@@ -7,7 +7,6 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:local="clr-namespace:MicToPng"
 	mc:Ignorable="d"
-	Title="MainWindow"
 	Height="450"
 	Width="350"
 	WindowStartupLocation="CenterScreen"
@@ -24,6 +23,7 @@
 					<RowDefinition Height="*"/>
 				</Grid.RowDefinitions>
 
+				<!--Header-->
 				<Grid
 					Grid.Row="0"
 					VerticalAlignment="Center"
@@ -73,12 +73,37 @@
 						MouseLeftButtonDown="BorderWindowDragZone_MouseLeftButtonDown"/>
 				</Grid>
 
+				<!--Main-->
 				<materialDesign:Card
-					Margin="10 00 10 10"
+					Margin="10 0 10 10"
 					Background="#2E2E2E"
 					UniformCornerRadius="10"
 					Grid.Row="1">
-				
+					<Grid>
+						<Grid.RowDefinitions>
+							<RowDefinition
+								Height="0.5*" />
+							<RowDefinition
+								Height="0.5*" />
+							<RowDefinition
+								Height="0.5*" />
+							<RowDefinition
+								Height="0.5*" />
+							<RowDefinition
+								Height="0.5*" />
+						</Grid.RowDefinitions>
+
+						<TextBlock
+							Text="MicToPng"
+							Grid.Row="0"
+							FontSize="32px"
+							Foreground="White"
+							FontFamily="Consolas"
+							FontWeight="ExtraBold"
+							HorizontalAlignment="Center"
+							VerticalAlignment="Center"
+							Margin="0 0 0 30" />
+					</Grid>
 				</materialDesign:Card>
 			</Grid>
 		</materialDesign:Card>
