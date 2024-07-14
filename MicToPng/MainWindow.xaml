@@ -132,7 +132,7 @@
 						<StackPanel
 							x:Name="SPanelFileCount"
 							Grid.Row="2"
-							Visibility="Hidden">
+							Visibility="Visible">
 							<TextBlock
 								Text="Найдено файлов:"
 								TextAlignment="Center"
@@ -148,7 +148,30 @@
 								Foreground="LightGray"/>
 						</StackPanel>
 
-
+						<Button
+							x:Name="ButtonConvert"
+							Height="50"
+							Grid.Row="3"
+							materialDesign:ButtonAssist.CornerRadius="5"
+							BorderThickness="2"
+							Background="Transparent"
+							BorderBrush="White"
+							Visibility="Visible">
+							<StackPanel
+								Orientation="Horizontal">
+								<materialDesign:PackIcon
+									Width="60"
+									Height="35"
+									Kind="NoteEdit"
+									Foreground="LightGray"
+									VerticalAlignment="Center" />
+								<TextBlock
+									Foreground="LightGray"
+									Text="КОНВЕРТИРОВАТЬ"
+									TextAlignment="Center"
+									VerticalAlignment="Center" />
+							</StackPanel>
+						</Button>
 					</Grid>
 				</materialDesign:Card>
 			</Grid>
