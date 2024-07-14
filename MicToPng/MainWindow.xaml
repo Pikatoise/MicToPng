@@ -9,6 +9,7 @@
 	mc:Ignorable="d"
 	Height="450"
 	Width="350"
+	FontFamily="Consolas"
 	WindowStartupLocation="CenterScreen"
 	WindowStyle="None"
 	AllowsTransparency="True"
@@ -76,6 +77,7 @@
 				<!--Main-->
 				<materialDesign:Card
 					Margin="10 0 10 10"
+					Padding="50 0"
 					Background="#2E2E2E"
 					UniformCornerRadius="10"
 					Grid.Row="1">
@@ -98,11 +100,36 @@
 							Grid.Row="0"
 							FontSize="32px"
 							Foreground="White"
-							FontFamily="Consolas"
 							FontWeight="ExtraBold"
 							HorizontalAlignment="Center"
 							VerticalAlignment="Center"
 							Margin="0 0 0 30" />
+
+						<Button
+							x:Name="ButtonSelectFolder"
+							Height="50"
+							Grid.Row="1"
+							materialDesign:ButtonAssist.CornerRadius="5"
+							BorderThickness="2"
+							Background="Transparent"
+							BorderBrush="White">
+							<StackPanel Orientation="Horizontal">
+								<materialDesign:PackIcon 
+									Width="60"
+									Height="35"
+									Kind="Folder"
+									Foreground="LightGray"
+									VerticalAlignment="Center"/>
+								<TextBlock 
+									Foreground="LightGray"
+									TextAlignment="Center">
+									ВЫБРАТЬ ПАПКУ<LineBreak /> 
+									C ФАЙЛАМИ
+								</TextBlock>
+							</StackPanel>
+						</Button>
+
+
 					</Grid>
 				</materialDesign:Card>
 			</Grid>
