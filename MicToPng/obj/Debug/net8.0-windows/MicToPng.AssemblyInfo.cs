@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MicToPng")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+435df98043111749a5f39d34238c978f6b2705ab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e04db48258baedbd8c08c260b58ff8b150f5a20b")]
 [assembly: System.Reflection.AssemblyProductAttribute("MicToPng")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MicToPng")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
