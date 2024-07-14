@@ -129,6 +129,25 @@
 							</StackPanel>
 						</Button>
 
+						<StackPanel
+							x:Name="SPanelFileCount"
+							Grid.Row="2"
+							Visibility="Hidden">
+							<TextBlock
+								Text="Найдено файлов:"
+								TextAlignment="Center"
+								FontSize="22"
+								Foreground="LightGray"
+								Margin="0 0 0 5"/>
+
+							<TextBlock
+								x:Name="TBlockFileCount"
+								Text="1"
+								TextAlignment="Center"
+								FontSize="22"
+								Foreground="LightGray"/>
+						</StackPanel>
+
 
 					</Grid>
 				</materialDesign:Card>
