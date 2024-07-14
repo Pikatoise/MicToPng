@@ -172,6 +172,17 @@
 									VerticalAlignment="Center" />
 							</StackPanel>
 						</Button>
+
+						<ProgressBar 
+							x:Name="PBarStatus"
+							Visibility="Visible"
+							Height="20"
+							Grid.Row="4"
+							Value="50"
+							BorderThickness="0"
+							VerticalAlignment="Top"
+							Background="#1E1E1E"
+							Foreground="White"/>
 					</Grid>
 				</materialDesign:Card>
 			</Grid>
