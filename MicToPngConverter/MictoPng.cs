@@ -4,7 +4,7 @@
     /// Конвертор файлов с расширением .mic, используемых в игре Stalcraft. 
     /// </summary>
     ///
-    /// Сканирует указанную директорию на наличие .mic файлов, заменяет формат внутри файла и его расширение
+    /// Сканирует указанную директорию на наличие MIC файлов, заменяет формат внутри файла и его расширение
     /// Затем сохраняет конвертированные изображения в директорию и предоставляет возможность открыть папку с результатом
     /// 
     /// Формат выходных изображений: PNG
@@ -22,6 +22,32 @@
         /// </summary>
         public event ProgressHandler? OnProgressChanged;
         public delegate void ProgressHandler(int progress);
+
+
+        /// <summary>
+        /// Количество файлов с расширением .mic
+        /// </summary>
+        public int FileCount
+        {
+            get
+            {
+                return GetMicFiles().Length;
+            }
+        }
+
+        /// <summary>
+        /// Прогресс конвертации файлов в процентном соотношении
+        /// </summary>
+        public int Progress
+        {
+            get
+            {
+                if (_convertedFiles == 0)
+                    return 0;
+
+                return _convertedFiles / FileCount * 100;
+            }
+        }
 
         /// <summary>
         /// Инициализирует новый конвертер файлов директории <paramref name="path"/>
