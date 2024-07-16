@@ -17,15 +17,28 @@
         string _outputPath;
         int _convertedFiles = 0;
 
-        public delegate void ProgressHandler(int progress);
+        /// <summary>
+        /// Вызывается при обновлении прогресса
+        /// </summary>
         public event ProgressHandler? OnProgressChanged;
+        public delegate void ProgressHandler(int progress);
 
+        /// <summary>
+        /// Инициализирует новый конвертер файлов директории <paramref name="path"/>
+        /// </summary>
+        /// <param name="path">Директория, содержащая файлы .mic</param>
         public MicToPng(string path)
         {
             _path = path;
             _outputPath = path + "/converted/";
         }
 
+        /// <summary>
+        /// Инициализирует новый конвертер файлов директории <paramref name="path"/>
+        /// <para>Сохранение выходных изображений производится по пути <paramref name="outputPath"/></para>
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="outputPath"></param>
         public MicToPng(string path, string outputPath)
         {
             _path = path;
