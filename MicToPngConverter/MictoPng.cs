@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Text;
 
 namespace MicToPngConverter
 {
@@ -61,7 +62,7 @@ namespace MicToPngConverter
                 throw new DirectoryNotFoundException("Директория не существует");
 
             _path = path;
-            _outputPath = path + "/converted/";
+            _outputPath = path + @"\converted\";
         }
 
         /// <summary>
@@ -87,6 +88,45 @@ namespace MicToPngConverter
         public void OpenOutputFolder()
         {
             Process.Start("explorer.exe", _outputPath);
+        }
+
+        /// <summary>
+        /// Асинхронно начинает конвертацию и сохранение файлов
+        /// </summary>
+        public async void ConvertFiles()
+        {
+            string[] micFilesPath = GetMicFiles();
+
+            if (!Directory.Exists(_outputPath))
+                Directory.CreateDirectory(_outputPath);
+
+            await Task.Run(() =>
+            {
+                foreach (string path in micFilesPath)
+                {
+                    if (File.Exists(path))
+                    {
+                        string fileName = new FileInfo(path).Name;
+
+                        string newFilePath = _outputPath + fileName;
+
+                        File.Copy(path, newFilePath, true);
+
+                        StringBuilder fileText = new StringBuilder(File.ReadAllText(newFilePath, Encoding.UTF8));
+
+                        fileText[1] = 'P';
+                        fileText[2] = 'N';
+                        fileText[3] = 'G';
+
+                        File.WriteAllText(newFilePath, fileText.ToString());
+                        File.Move(newFilePath, Path.ChangeExtension(newFilePath, ".png"));
+
+                        _convertedFiles += 1;
+                        if (OnProgressChanged != null)
+                            OnProgressChanged.Invoke(Progress);
+                    }
+                }
+            });
         }
     }
 }
