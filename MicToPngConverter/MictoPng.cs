@@ -1,4 +1,6 @@
-﻿namespace MicToPngConverter
+﻿using System.Diagnostics;
+
+namespace MicToPngConverter
 {
     /// <summary>
     /// Конвертор файлов с расширением .mic, используемых в игре Stalcraft. 
@@ -78,5 +80,13 @@
         }
 
         private string[] GetMicFiles() => Directory.GetFiles(_path, "*.mic");
+
+        /// <summary>
+        /// Открыть директорию с результатом конвертации
+        /// </summary>
+        public void OpenOutputFolder()
+        {
+            Process.Start("explorer.exe", _outputPath);
+        }
     }
 }
