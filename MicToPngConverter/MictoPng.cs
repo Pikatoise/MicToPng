@@ -29,6 +29,9 @@
         /// <param name="path">Директория, содержащая файлы .mic</param>
         public MicToPng(string path)
         {
+            if (!Directory.Exists(path))
+                throw new DirectoryNotFoundException("Директория не существует");
+
             _path = path;
             _outputPath = path + "/converted/";
         }
@@ -37,12 +40,17 @@
         /// Инициализирует новый конвертер файлов директории <paramref name="path"/>
         /// <para>Сохранение выходных изображений производится по пути <paramref name="outputPath"/></para>
         /// </summary>
-        /// <param name="path"></param>
-        /// <param name="outputPath"></param>
+        /// <param name="path">Директория, содержащая файлы .mic</param>
+        /// <param name="outputPath">Директория с результатом конвертации</param>
         public MicToPng(string path, string outputPath)
         {
+            if (!Directory.Exists(path))
+                throw new DirectoryNotFoundException("Директория не существует");
+
             _path = path;
             _outputPath = outputPath;
         }
+
+        private string[] GetMicFiles() => Directory.GetFiles(_path, "*.mic");
     }
 }
