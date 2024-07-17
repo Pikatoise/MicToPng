@@ -5,18 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6471E20E-55F9-4068-A41A-287AC3B41B4C}|MicToPngConverter\\MicToPngConverter.csproj|c:\\users\\pika\\desktop\\mictopng\\mictopngconverter\\mictopng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6471E20E-55F9-4068-A41A-287AC3B41B4C}|MicToPngConverter\\MicToPngConverter.csproj|solutionrelative:mictopngconverter\\mictopng.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D9DE729-7B90-42A6-AC20-6CCAC4D09207}|MicToPng\\MicToPng.csproj|c:\\users\\pika\\desktop\\mictopng\\mictopng\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6D9DE729-7B90-42A6-AC20-6CCAC4D09207}|MicToPng\\MicToPng.csproj|solutionrelative:mictopng\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D9DE729-7B90-42A6-AC20-6CCAC4D09207}|MicToPng\\MicToPng.csproj|c:\\users\\pika\\desktop\\mictopng\\mictopng\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D9DE729-7B90-42A6-AC20-6CCAC4D09207}|MicToPng\\MicToPng.csproj|solutionrelative:mictopng\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D9DE729-7B90-42A6-AC20-6CCAC4D09207}|MicToPng\\MicToPng.csproj|c:\\users\\pika\\desktop\\mictopng\\mictopng\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6D9DE729-7B90-42A6-AC20-6CCAC4D09207}|MicToPng\\MicToPng.csproj|solutionrelative:mictopng\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,46 +36,10 @@
               "RelativeDocumentMoniker": "MicToPngConverter\\MicToPng.cs",
               "ToolTip": "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPngConverter\\MicToPng.cs",
               "RelativeToolTip": "MicToPngConverter\\MicToPng.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAkAAAA",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAswF0AAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T19:39:38.799Z",
+              "WhenOpened": "2024-07-16T20:14:16.63Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPng\\App.xaml",
-              "RelativeDocumentMoniker": "MicToPng\\App.xaml",
-              "ToolTip": "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPng\\App.xaml",
-              "RelativeToolTip": "MicToPng\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-14T10:46:21.473Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPng\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MicToPng\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPng\\MainWindow.xaml",
-              "RelativeToolTip": "MicToPng\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-12T08:32:46.883Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPng\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MicToPng\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPng\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MicToPng\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T08:32:41.085Z"
             }
           ]
         }
