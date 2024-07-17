@@ -1,24 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\pika\\Desktop\\MicToPng\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{6D9DE729-7B90-42A6-AC20-6CCAC4D09207}|MicToPng\\MicToPng.csproj|c:\\users\\pika\\desktop\\mictopng\\mictopng\\mictopng.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{6D9DE729-7B90-42A6-AC20-6CCAC4D09207}|MicToPng\\MicToPng.csproj|solutionrelative:mictopng\\mictopng.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D9DE729-7B90-42A6-AC20-6CCAC4D09207}|MicToPng\\MicToPng.csproj|c:\\users\\pika\\desktop\\mictopng\\mictopng\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6D9DE729-7B90-42A6-AC20-6CCAC4D09207}|MicToPng\\MicToPng.csproj|solutionrelative:mictopng\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D9DE729-7B90-42A6-AC20-6CCAC4D09207}|MicToPng\\MicToPng.csproj|c:\\users\\pika\\desktop\\mictopng\\mictopng\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6D9DE729-7B90-42A6-AC20-6CCAC4D09207}|MicToPng\\MicToPng.csproj|solutionrelative:mictopng\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D9DE729-7B90-42A6-AC20-6CCAC4D09207}|MicToPng\\MicToPng.csproj|c:\\users\\pika\\desktop\\mictopng\\mictopng\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D9DE729-7B90-42A6-AC20-6CCAC4D09207}|MicToPng\\MicToPng.csproj|solutionrelative:mictopng\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -26,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -41,53 +24,8 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MicToPng",
-              "DocumentMoniker": "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPng\\MicToPng.csproj",
-              "RelativeDocumentMoniker": "MicToPng\\MicToPng.csproj",
-              "ToolTip": "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPng\\MicToPng.csproj",
-              "RelativeToolTip": "MicToPng\\MicToPng.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-14T11:57:11.21Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPng\\App.xaml",
-              "RelativeDocumentMoniker": "MicToPng\\App.xaml",
-              "ToolTip": "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPng\\App.xaml",
-              "RelativeToolTip": "MicToPng\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-14T10:46:21.473Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPng\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MicToPng\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPng\\MainWindow.xaml",
-              "RelativeToolTip": "MicToPng\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-12T08:32:46.883Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPng\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MicToPng\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPng\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MicToPng\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T08:32:41.085Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

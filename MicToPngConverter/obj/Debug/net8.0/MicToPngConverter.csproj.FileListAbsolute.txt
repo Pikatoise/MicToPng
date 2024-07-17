@@ -1,0 +1,12 @@
+C:\Users\pika\Desktop\MicToPng\MicToPngConverter\bin\Debug\net8.0\MicToPngConverter.deps.json
+C:\Users\pika\Desktop\MicToPng\MicToPngConverter\bin\Debug\net8.0\MicToPngConverter.dll
+C:\Users\pika\Desktop\MicToPng\MicToPngConverter\bin\Debug\net8.0\MicToPngConverter.pdb
+C:\Users\pika\Desktop\MicToPng\MicToPngConverter\obj\Debug\net8.0\MicToPngConverter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pika\Desktop\MicToPng\MicToPngConverter\obj\Debug\net8.0\MicToPngConverter.AssemblyInfoInputs.cache
+C:\Users\pika\Desktop\MicToPng\MicToPngConverter\obj\Debug\net8.0\MicToPngConverter.AssemblyInfo.cs
+C:\Users\pika\Desktop\MicToPng\MicToPngConverter\obj\Debug\net8.0\MicToPngConverter.csproj.CoreCompileInputs.cache
+C:\Users\pika\Desktop\MicToPng\MicToPngConverter\obj\Debug\net8.0\MicToPngConverter.sourcelink.json
+C:\Users\pika\Desktop\MicToPng\MicToPngConverter\obj\Debug\net8.0\MicToPngConverter.dll
+C:\Users\pika\Desktop\MicToPng\MicToPngConverter\obj\Debug\net8.0\refint\MicToPngConverter.dll
+C:\Users\pika\Desktop\MicToPng\MicToPngConverter\obj\Debug\net8.0\MicToPngConverter.pdb
+C:\Users\pika\Desktop\MicToPng\MicToPngConverter\obj\Debug\net8.0\ref\MicToPngConverter.dll
