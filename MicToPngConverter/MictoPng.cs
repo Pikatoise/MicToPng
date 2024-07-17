@@ -1,5 +1,4 @@
 ﻿using System.Diagnostics;
-using System.Text;
 
 namespace MicToPngConverter
 {
@@ -112,14 +111,18 @@ namespace MicToPngConverter
 
                         File.Copy(path, newFilePath, true);
 
-                        StringBuilder fileText = new StringBuilder(File.ReadAllText(newFilePath, Encoding.UTF8));
+                        byte[] fileContent = File.ReadAllBytes(newFilePath);
 
-                        fileText[1] = 'P';
-                        fileText[2] = 'N';
-                        fileText[3] = 'G';
+                        if (fileContent[1] == (byte)'M' && fileContent[2] == (byte)'I' && fileContent[3] == (byte)'C')
+                        {
+                            fileContent[1] = (byte)'P';
+                            fileContent[2] = (byte)'N';
+                            fileContent[3] = (byte)'G';
+                        }
 
-                        File.WriteAllText(newFilePath, fileText.ToString());
-                        File.Move(newFilePath, Path.ChangeExtension(newFilePath, ".png"));
+                        File.WriteAllBytes(newFilePath, fileContent);
+
+                        File.Move(newFilePath, Path.ChangeExtension(newFilePath, ".png"), true);
 
                         _convertedFiles += 1;
                         if (OnProgressChanged != null)

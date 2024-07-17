@@ -4,6 +4,67 @@
     "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPng\\MicToPng.csproj": {}
   },
   "projects": {
+    "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPngConverter\\MicToPngConverter.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPngConverter\\MicToPngConverter.csproj",
+        "projectName": "MicToPngConverter",
+        "projectPath": "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPngConverter\\MicToPngConverter.csproj",
+        "packagesPath": "C:\\Users\\pika\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPngConverter\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\pika\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPng\\MicToPng.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -28,7 +89,11 @@
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPngConverter\\MicToPngConverter.csproj": {
+                "projectPath": "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPngConverter\\MicToPngConverter.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -49,6 +114,10 @@
             "MaterialDesignThemes": {
               "target": "Package",
               "version": "[5.1.0, )"
+            },
+            "WindowsAPICodePack-Shell": {
+              "target": "Package",
+              "version": "[1.1.1, )"
             }
           },
           "imports": [

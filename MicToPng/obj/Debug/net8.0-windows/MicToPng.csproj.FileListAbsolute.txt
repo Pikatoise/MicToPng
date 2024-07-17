@@ -25,3 +25,7 @@ C:\Users\pika\Desktop\MicToPng\MicToPng\obj\Debug\net8.0-windows\refint\MicToPng
 C:\Users\pika\Desktop\MicToPng\MicToPng\obj\Debug\net8.0-windows\MicToPng.pdb
 C:\Users\pika\Desktop\MicToPng\MicToPng\obj\Debug\net8.0-windows\MicToPng.genruntimeconfig.cache
 C:\Users\pika\Desktop\MicToPng\MicToPng\obj\Debug\net8.0-windows\ref\MicToPng.dll
+C:\Users\pika\Desktop\MicToPng\MicToPng\bin\Debug\net8.0-windows\MicToPngConverter.dll
+C:\Users\pika\Desktop\MicToPng\MicToPng\bin\Debug\net8.0-windows\MicToPngConverter.pdb
+C:\Users\pika\Desktop\MicToPng\MicToPng\bin\Debug\net8.0-windows\Microsoft.WindowsAPICodePack.dll
+C:\Users\pika\Desktop\MicToPng\MicToPng\bin\Debug\net8.0-windows\Microsoft.WindowsAPICodePack.Shell.dll

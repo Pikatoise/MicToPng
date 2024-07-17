@@ -107,6 +107,7 @@
 
 						<Button
 							x:Name="ButtonSelectFolder"
+							Click="ButtonSelectFolder_Click"
 							Height="50"
 							Grid.Row="1"
 							materialDesign:ButtonAssist.CornerRadius="5"
@@ -132,7 +133,7 @@
 						<StackPanel
 							x:Name="SPanelFileCount"
 							Grid.Row="2"
-							Visibility="Visible">
+							Visibility="Hidden">
 							<TextBlock
 								Text="Найдено файлов:"
 								TextAlignment="Center"
@@ -150,13 +151,14 @@
 
 						<Button
 							x:Name="ButtonConvert"
+							Click="ButtonConvert_Click"
 							Height="50"
 							Grid.Row="3"
 							materialDesign:ButtonAssist.CornerRadius="5"
 							BorderThickness="2"
 							Background="Transparent"
 							BorderBrush="White"
-							Visibility="Visible">
+							Visibility="Hidden">
 							<StackPanel
 								Orientation="Horizontal">
 								<materialDesign:PackIcon
@@ -175,7 +177,7 @@
 
 						<ProgressBar 
 							x:Name="PBarStatus"
-							Visibility="Visible"
+							Visibility="Hidden"
 							Height="20"
 							Grid.Row="4"
 							Value="50"
@@ -187,13 +189,14 @@
 
 						<Button
 							x:Name="ButtonOpenFolder"
+							Click="ButtonOpenFolder_Click"
 							Height="50"
 							Grid.Row="4"
 							materialDesign:ButtonAssist.CornerRadius="5"
 							BorderThickness="2"
 							Background="Transparent"
 							BorderBrush="White"
-							Visibility="Visible">
+							Visibility="Hidden">
 							<StackPanel
 								Orientation="Horizontal">
 								<materialDesign:PackIcon
