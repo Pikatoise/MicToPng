@@ -50,6 +50,16 @@
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
         ]
+      },
+      "MicToPngConverter/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/MicToPngConverter.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MicToPngConverter.dll": {}
+        }
       }
     }
   },
@@ -140,11 +150,17 @@
         "microsoft.xaml.behaviors.wpf.nuspec",
         "tools/Install.ps1"
       ]
+    },
+    "MicToPngConverter/1.0.0": {
+      "type": "project",
+      "path": "../MicToPngConverter/MicToPngConverter.csproj",
+      "msbuildProject": "../MicToPngConverter/MicToPngConverter.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "MaterialDesignThemes >= 5.1.0"
+      "MaterialDesignThemes >= 5.1.0",
+      "MicToPngConverter >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -174,7 +190,11 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPngConverter\\MicToPngConverter.csproj": {
+              "projectPath": "C:\\Users\\pika\\Desktop\\MicToPng\\MicToPngConverter\\MicToPngConverter.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

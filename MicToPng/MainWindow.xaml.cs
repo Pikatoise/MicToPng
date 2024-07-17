@@ -5,6 +5,8 @@ namespace MicToPng
 {
     public partial class MainWindow: Window
     {
+        MicToPngConverter.MicToPng? converter;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -23,6 +25,21 @@ namespace MicToPng
         private void BorderWindowDragZone_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             this.DragMove();
+        }
+
+        private void ButtonSelectFolder_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonConvert_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonOpenFolder_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
