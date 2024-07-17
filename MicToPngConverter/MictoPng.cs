@@ -22,8 +22,8 @@ namespace MicToPngConverter
         /// <summary>
         /// Вызывается при обновлении прогресса
         /// </summary>
-        public event ProgressHandler? OnProgressChanged;
-        public delegate void ProgressHandler(int progress);
+        public event FinishHandler? OnFinish;
+        public delegate void FinishHandler(int convertedCount);
 
 
         /// <summary>
@@ -34,20 +34,6 @@ namespace MicToPngConverter
             get
             {
                 return GetMicFiles().Length;
-            }
-        }
-
-        /// <summary>
-        /// Прогресс конвертации файлов в процентном соотношении
-        /// </summary>
-        public int Progress
-        {
-            get
-            {
-                if (_convertedFiles == 0)
-                    return 0;
-
-                return _convertedFiles / FileCount * 100;
             }
         }
 
@@ -94,6 +80,8 @@ namespace MicToPngConverter
         /// </summary>
         public async void ConvertFiles()
         {
+            _convertedFiles = 0;
+
             string[] micFilesPath = GetMicFiles();
 
             if (!Directory.Exists(_outputPath))
@@ -125,10 +113,11 @@ namespace MicToPngConverter
                         File.Move(newFilePath, Path.ChangeExtension(newFilePath, ".png"), true);
 
                         _convertedFiles += 1;
-                        if (OnProgressChanged != null)
-                            OnProgressChanged.Invoke(Progress);
                     }
                 }
+
+                if (OnFinish != null)
+                    OnFinish.Invoke(_convertedFiles);
             });
         }
     }

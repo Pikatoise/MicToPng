@@ -7,6 +7,7 @@ namespace MicToPng
     public partial class MainWindow: Window
     {
         MicToPngConverter.MicToPng? converter;
+        string? _savedPath = null;
 
         public MainWindow()
         {
@@ -36,23 +37,21 @@ namespace MicToPng
 
             if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
             {
-                converter = new MicToPngConverter.MicToPng(dialog.FileName);
-
-                int micFilesCount = converter.FileCount;
-
-                SPanelFileCount.Visibility = Visibility.Visible;
-
-                TBlockFileCount.Text = micFilesCount.ToString();
-
-                if (micFilesCount > 0)
-                {
-                    ButtonConvert.Visibility = Visibility.Visible;
-                }
-                else
-                    ButtonConvert.Visibility = Visibility.Hidden;
-
                 PBarStatus.Visibility = Visibility.Hidden;
                 ButtonOpenFolder.Visibility = Visibility.Hidden;
+
+                _savedPath = dialog.FileName;
+
+                converter = new MicToPngConverter.MicToPng(dialog.FileName);
+                int micFilesCount = converter.FileCount;
+
+                TBlockFileCount.Text = micFilesCount.ToString();
+                SPanelFileCount.Visibility = Visibility.Visible;
+
+                if (micFilesCount > 0)
+                    GridConvert.Visibility = Visibility.Visible;
+                else
+                    GridConvert.Visibility = Visibility.Hidden;
             }
         }
 
@@ -60,20 +59,15 @@ namespace MicToPng
         {
             if (converter != null)
             {
-                PBarStatus.Value = 0;
                 PBarStatus.Visibility = Visibility.Visible;
+                ButtonOpenFolder.Visibility = Visibility.Hidden;
 
-                converter.OnProgressChanged += (percentes) =>
+                converter.OnFinish += (convertedCount) =>
                 {
                     Application.Current.Dispatcher.Invoke(() =>
                     {
-                        PBarStatus.Value = percentes;
-
-                        if (percentes == 100)
-                        {
-                            PBarStatus.Visibility = Visibility.Hidden;
-                            ButtonOpenFolder.Visibility = Visibility.Visible;
-                        }
+                        PBarStatus.Visibility = Visibility.Hidden;
+                        ButtonOpenFolder.Visibility = Visibility.Visible;
                     });
                 };
 
@@ -85,6 +79,26 @@ namespace MicToPng
         {
             if (converter != null)
                 converter.OpenOutputFolder();
+        }
+
+        private void ButtonRefresh_Click(object sender, RoutedEventArgs e)
+        {
+            if (_savedPath != null)
+            {
+                PBarStatus.Visibility = Visibility.Hidden;
+                ButtonOpenFolder.Visibility = Visibility.Hidden;
+
+                converter = new MicToPngConverter.MicToPng(_savedPath);
+                int micFilesCount = converter.FileCount;
+
+                TBlockFileCount.Text = micFilesCount.ToString();
+                SPanelFileCount.Visibility = Visibility.Visible;
+
+                if (micFilesCount > 0)
+                    GridConvert.Visibility = Visibility.Visible;
+                else
+                    GridConvert.Visibility = Visibility.Hidden;
+            }
         }
     }
 }
